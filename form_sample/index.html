@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>アンケート</title>
+</head>
+<body>
+  <h1>アンケート</h1>
+  <!-- 
+    よくある入力フォームなど、ユーザーに何かしらのデータの入力を求めるためのUI
+   -->
+
+  <!-- 
+    データをポスト(送信)するためのpostという処理をmethodに指定する
+    データを送信する先をactionで指定する(今回はcheck.php)
+   -->
+  <form method="post" action="check.php">
+    <!-- input部分が実際に入力してもらう入力窓を作成する部分 -->
+    <p>ニックネームを入力してください。</p>
+    <input name="nickname" type="text" style="width: 100px;">
+    
+    <input type="submit" value="送信">
+  </form>
+</body>
+</html>
